@@ -18,28 +18,28 @@ export default function Dashboard() {
   const recentActivity = [
     {
       id: 1,
-      user: "Sarah Wilson",
+      user: "Priya Sharma",
       action: "Clocked In",
       time: "08:58 AM",
       status: "ontime",
     },
     {
       id: 2,
-      user: "Mike Johnson",
+      user: "Rahul Gupta",
       action: "Clocked In",
       time: "09:12 AM",
       status: "late",
     },
     {
       id: 3,
-      user: "Emily Davis",
+      user: "Neha Singh",
       action: "Break Start",
       time: "11:30 AM",
       status: "break",
     },
     {
       id: 4,
-      user: "Alex Turner",
+      user: "Vikram Patel",
       action: "Clocked Out",
       time: "05:01 PM",
       status: "left",

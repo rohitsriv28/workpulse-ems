@@ -24,7 +24,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     // Mock login logic
     setUser({
       id: "1",
-      name: "John Doe",
+      name: "Narendra Modi",
       email,
       role,
     });

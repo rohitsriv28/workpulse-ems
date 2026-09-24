@@ -6,7 +6,7 @@ import { calculatePayroll } from "../../lib/payroll";
 import {
   Search,
   Download,
-  DollarSign,
+  IndianRupee,
   Calendar,
   Briefcase,
   Home,
@@ -99,9 +99,9 @@ export default function EmployeePayrollReport() {
                   Net Salary
                 </p>
                 <p className="text-2xl font-bold text-primary font-mono">
-                  $
+                  ₹
                   {reportData.payroll.calculatedSalary.toLocaleString(
-                    undefined,
+                    "en-IN",
                     { minimumFractionDigits: 2, maximumFractionDigits: 2 }
                   )}
                 </p>
@@ -114,7 +114,7 @@ export default function EmployeePayrollReport() {
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-text-muted">Base Salary</span>
                   <span className="font-semibold text-text-main">
-                    ${reportData.payroll.salary.toLocaleString()}
+                    ₹{reportData.payroll.salary.toLocaleString("en-IN")}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
@@ -128,9 +128,9 @@ export default function EmployeePayrollReport() {
                     Total Deductions
                   </span>
                   <span className="font-semibold text-error">
-                    -$
+                    -₹
                     {reportData.payroll.deductionAmount.toLocaleString(
-                      undefined,
+                      "en-IN",
                       { minimumFractionDigits: 2 }
                     )}
                   </span>
@@ -197,7 +197,7 @@ export default function EmployeePayrollReport() {
               <span>
                 <strong>Note:</strong> Calculation is based on a daily rate of{" "}
                 <strong>
-                  $
+                  ₹
                   {(
                     reportData.payroll.salary /
                     reportData.payroll.totalDaysInMonth
@@ -212,7 +212,7 @@ export default function EmployeePayrollReport() {
       ) : (
         <div className="text-center py-20 bg-surface rounded-xl border border-dashed border-gray-200">
           <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-4 text-gray-400">
-            <DollarSign className="w-8 h-8" />
+            <IndianRupee className="w-8 h-8" />
           </div>
           <h3 className="text-lg font-medium text-text-main">
             No Employee Selected

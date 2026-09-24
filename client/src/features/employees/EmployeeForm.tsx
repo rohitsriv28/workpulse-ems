@@ -149,7 +149,7 @@ export default function EmployeeForm({
 
           <div>
             <label className="block text-sm font-medium text-text-main mb-1">
-              Monthly Salary ($)
+              Monthly Salary (₹)
             </label>
             <input
               type="number"

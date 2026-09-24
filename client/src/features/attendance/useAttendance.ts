@@ -6,7 +6,7 @@ const MOCK_DATA: AttendanceRecord[] = [
   {
     id: "1",
     employeeId: "EMP001",
-    employeeName: "Alice Johnson",
+    employeeName: "Rohit Srivastava",
     department: "Engineering",
     date: format(new Date(), "yyyy-MM-dd"),
     checkIn: new Date().toISOString(),
@@ -17,7 +17,7 @@ const MOCK_DATA: AttendanceRecord[] = [
   {
     id: "2",
     employeeId: "EMP002",
-    employeeName: "Bob Smith",
+    employeeName: "Niraj Kapoor",
     department: "HR",
     date: format(new Date(), "yyyy-MM-dd"),
     checkIn: new Date(Date.now() - 3600 * 1000).toISOString(), // 1 hour ago
@@ -28,7 +28,7 @@ const MOCK_DATA: AttendanceRecord[] = [
   {
     id: "3",
     employeeId: "EMP003",
-    employeeName: "Charlie Brown",
+    employeeName: "Amit Shah",
     department: "Sales",
     date: format(new Date(), "yyyy-MM-dd"),
     checkIn: null,

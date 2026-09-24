@@ -22,7 +22,7 @@ const MOCK_LOGS: AuditLog[] = [
   {
     id: "2",
     action: "CREATE_EMPLOYEE",
-    resource: "Employee: John Doe",
+    resource: "Employee: Narendra Modi",
     user: "admin@company.com",
     timestamp: "2023-10-25 09:15:00",
     status: "SUCCESS",
@@ -38,7 +38,7 @@ const MOCK_LOGS: AuditLog[] = [
   {
     id: "4",
     action: "DELETE_EMPLOYEE",
-    resource: "Employee: Jane Smith",
+    resource: "Employee: Anjali Verma",
     user: "admin@company.com",
     timestamp: "2023-10-25 11:45:00",
     status: "FAILURE",

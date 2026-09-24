@@ -72,7 +72,7 @@ export default function EmployeeList({
                   {employee.department}
                 </td>
                 <td className="p-4 text-sm text-text-main font-mono">
-                  ${employee.salary.toLocaleString()}
+                  ₹{employee.salary.toLocaleString("en-IN")}
                 </td>
                 <td className="p-4">
                   <span
