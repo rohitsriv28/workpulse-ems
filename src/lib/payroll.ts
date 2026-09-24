@@ -19,7 +19,7 @@ interface PayrollResult {
 export const calculatePayroll = (
   employee: Employee,
   attendanceRecords: AttendanceRecord[],
-  monthStr: string // "YYYY-MM"
+  monthStr: string, // "YYYY-MM"
 ): PayrollResult => {
   const date = parseISO(`${monthStr}-01`);
   const totalDaysInMonth = getDaysInMonth(date);
@@ -34,7 +34,7 @@ export const calculatePayroll = (
   // Filter records for the specific month
   const monthlyRecords = attendanceRecords.filter(
     (record) =>
-      record.date.startsWith(monthStr) && record.employeeId === employee.id
+      record.date.startsWith(monthStr) && record.employeeId === employee.id,
   );
 
   monthlyRecords.forEach((record) => {

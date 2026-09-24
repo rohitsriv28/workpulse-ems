@@ -73,10 +73,10 @@ export default function AttendanceTable({
                       record.status === "PRESENT"
                         ? "bg-green-100 text-green-800"
                         : record.status === "ABSENT"
-                        ? "bg-red-100 text-red-800"
-                        : record.status === "LATE"
-                        ? "bg-orange-100 text-orange-800"
-                        : "bg-gray-100 text-gray-800"
+                          ? "bg-red-100 text-red-800"
+                          : record.status === "LATE"
+                            ? "bg-orange-100 text-orange-800"
+                            : "bg-gray-100 text-gray-800"
                     }`}
                   >
                     {record.status}

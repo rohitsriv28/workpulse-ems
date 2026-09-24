@@ -16,7 +16,7 @@ import {
 export default function EmployeePayrollReport() {
   const { data: employees } = useEmployees();
   const [selectedMonth, setSelectedMonth] = useState<string>(
-    format(new Date(), "yyyy-MM")
+    format(new Date(), "yyyy-MM"),
   );
   const [selectedEmployeeId, setSelectedEmployeeId] = useState<string>("");
   const { data: attendance } = useAttendance(new Date(selectedMonth));
@@ -100,10 +100,10 @@ export default function EmployeePayrollReport() {
                 </p>
                 <p className="text-2xl font-bold text-primary font-mono">
                   ₹
-                  {reportData.payroll.calculatedSalary.toLocaleString(
-                    "en-IN",
-                    { minimumFractionDigits: 2, maximumFractionDigits: 2 }
-                  )}
+                  {reportData.payroll.calculatedSalary.toLocaleString("en-IN", {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                  })}
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function EmployeePayrollReport() {
                     -₹
                     {reportData.payroll.deductionAmount.toLocaleString(
                       "en-IN",
-                      { minimumFractionDigits: 2 }
+                      { minimumFractionDigits: 2 },
                     )}
                   </span>
                 </div>
